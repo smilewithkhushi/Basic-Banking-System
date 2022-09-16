@@ -1,0 +1,108 @@
+/*The topmost navigation bar*/
+.navbar{
+  display: block;
+  color: white;
+  font-family: monospace;
+  background-color: black;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+  overflow: hidden;
+  box-shadow: 2px 2px 8px #000000;
+}
+
+.navbar a {
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 15px;
+  display: inline-block;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color:#DAA520;
+  color: white;
+}
+
+/* the center container below navbar*/
+.container{
+  width: 100%;
+  height: 60%;
+  background-image: url("digital.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  backface-visibility: visible;
+  margin-bottom: 20px;
+}
+
+.pagebreak{
+  display: block;
+  width: 100%;
+  height: 8vh;
+  background-image: url("rose.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  backface-visibility: visible;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contentbox{
+  padding: 10px;
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+  width: 50%;
+  border-radius: 5px;
+  display: block;
+}
+
+/*hovered menu - yellow box*/
+.contentbox h1{
+  font-family: monospace;
+  font-size: 30px;
+  color: white;
+  background-color: #FF8C00;
+  border-radius: 10px;
+  border-style: double;
+  border: 2px solid white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 40%;
+}
+
+.contentbox:hover{
+  transition: 0.3s;
+  border: 2px solid grey;
+  box-shadow: 8px 8px 15px grey;
+  border-radius: 10px;
+}
+
+.content{
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.footer{
+  width: 100%;
+  display: block;
+  color: white;
+  font-family: monospace;
+  font-size: 15px;
+  font-style: normal;
+  background-color: black;
+  padding: 2px;
+  margin-top: 2px;
+}
