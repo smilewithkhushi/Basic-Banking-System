@@ -1,18 +1,47 @@
 /*The topmost navigation bar*/
+
+body{
+  background-color: black;
+  font:"Gill Sans" ;
+	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	font-family: , "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: white;
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
+	height: 100vh; */
+}
+
+
+.header{
+  display: inline-block;
+  margin-left: 15vw;
+  margin-top: 10vh;
+  padding: 10px;
+  color: white;
+  font-size: 5vw;
+  font-weight: 100;
+  font-family: Verdana;
+  width: 35%;
+  overflow: auto;
+  text-shadow: 3px 3px grey;
+}
+
 .navbar{
   display: block;
   color: white;
   font-family: monospace;
   background-color: black;
-  padding: 10px;
+  padding: 8px;
   width: 100%;
   height: auto;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   overflow: hidden;
   box-shadow: 2px 2px 8px #000000;
 }
 
 .navbar a {
+  font-family: sans-serif;
+  font-weight: bold;
   float: center;
   color: #f2f2f2;
   text-align: center;
@@ -24,54 +53,94 @@
 
 /* Change the color of links on hover */
 .navbar a:hover {
-  background-color: #ddd;
-  color: black;
+  box-shadow: 0px 2px  whitesmoke;
+  font-weight:bolder;
+  transition: 1s;
+  color: #C0C0C0;
 }
 
 /* Add a color to the active/current link */
 .navbar a.active {
-  background-color:#DAA520;
-  color: white;
+  color: #e4ba4e;
 }
 
 /* the center container below navbar*/
 .container{
   width: 100%;
   height: 60%;
-  background-image: url("digital.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  backface-visibility: visible;
-  margin-bottom: 20px;
+  background: linear-gradient(140deg,rgb(71, 70, 59), rgb(185, 185, 185), #b49636 ,rgb(183, 180, 180), #ffc404 );
+  margin-bottom: 10px;
+  animation: gradient 10s ease infinite; 
+  background-size: 400% 400%;
 }
 
+
+@keyframes gradient{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+
+/*graphics page break in between*/
 .pagebreak{
   display: block;
   width: 100%;
   height: 8vh;
-  background-image: url("rose.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  backface-visibility: visible;
+  background: linear-gradient(40deg,rgb(71, 70, 59), rgb(223, 211, 211), #ac8d27 ,rgb(100, 97, 97), #ffc609 );
+  margin-bottom: 10px;
+  animation: gradient 7s ease infinite; 
+  background-size: 400% 400%;
   margin-top: 20px;
   margin-bottom: 20px;
+  
 }
 
 .contentbox{
-  padding: 10px;
+  padding: 20px;
   background-color: black;
   color: white;
   transition: 0.3s;
-  width: 50%;
+  width: 60%;
   border-radius: 5px;
-  display: block;
+  display: inline-block;
+}
+
+/* content inside our facilities*/
+.subcontent{
+  padding: 8px;
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+  width: 25%;
+  display: inline-block;
+  /* border: 1px solid goldenrod; */
+  box-shadow: 2px 2px 2px 2px rgba(255, 217, 0, 0.618);
+  border-radius: 10px;
+  margin: 10px;
+}
+.subcontent h2{
+  font-family: 'Trebuchet MS';
+  font-size: 20px;
+  color: goldenrod;
+  background-color: white;
+  border-radius: 10px;
+  border-style: double;
+  border: 2px solid white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 15vw;
+  overflow: auto;
 }
 
 /*hovered menu - yellow box*/
 .contentbox h1{
-  font-family: monospace;
+  font-family: 'Trebuchet MS';
   font-size: 30px;
   color: white;
   background-color: #FF8C00;
@@ -80,7 +149,8 @@
   border: 2px solid white;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 40%;
+  width: 30vw;
+  overflow: auto;
 }
 
 .contentbox:hover{
@@ -95,6 +165,8 @@
   padding-right: 10vw;
 }
 
+
+/* Bottom of the page*/
 .footer{
   width: 100%;
   display: block;

@@ -3,6 +3,7 @@
 body{
   background-color: black;
   font:"Gill Sans" ;
+  color: white;
 	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	font-family: , "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	color: white;
@@ -111,34 +112,6 @@ body{
   display: inline-block;
 }
 
-/* content inside our facilities*/
-.subcontent{
-  padding: 8px;
-  background-color: black;
-  color: white;
-  transition: 0.3s;
-  width: 25%;
-  display: inline-block;
-  /* border: 1px solid goldenrod; */
-  box-shadow: 2px 2px 2px 2px rgba(255, 217, 0, 0.618);
-  border-radius: 10px;
-  margin: 10px;
-}
-.subcontent h2{
-  font-family: 'Trebuchet MS';
-  font-size: 20px;
-  color: goldenrod;
-  background-color: white;
-  border-radius: 10px;
-  border-style: double;
-  border: 2px solid white;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  width: 15vw;
-  overflow: auto;
-  cursor: pointer;
-}
-
 /*hovered menu - yellow box*/
 .contentbox h1{
   font-family: 'Trebuchet MS';
@@ -159,14 +132,56 @@ body{
   border: 2px solid grey;
   box-shadow: 8px 8px 15px grey;
   border-radius: 10px;
-}
+} 
 
 .content{
   padding-left: 10vw;
   padding-right: 10vw;
 }
 
+.customer{
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  border: 2px solid white;
+}
+.customer th{
+  box-shadow: 0px 1px  white;
+  font-family: "Trebuchet MS";
+  padding:25px;
+  margin: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
 
+
+.customer td{
+  font-family: Verdana;
+  padding: 15px;
+  margin: 15px;
+  font-size: 14px;
+
+}
+.button{
+  align-self: center;
+  align-content: center;
+  font-family: Verdana;
+  font-size: 14px;
+  background-color: #FF8C00;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid white;
+  padding: 12px;
+  margin: 0px;
+  width:fit-content;
+}
+
+.button:hover{
+  cursor: pointer;
+  box-shadow: 2px 2px grey;
+  background-color: #ffc404;
+}
 /* Bottom of the page*/
 .footer{
   width: 100%;
@@ -186,4 +201,11 @@ body{
   .container{
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+  input,textarea{
+      width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .btn{
+      width: 30%;
+  }
+
 }
