@@ -15,8 +15,8 @@
   <a href="sendmoney.php">Send Money</a>
   <a href="customers.php">View All Customers</a>
   <a href="transactions.php">Transactions</a>
-  <a href="contact.php">Contact Us</a>
-  <a class="active" href="about.php">About Us</a>
+  <a class="active" href="contact.php">Contact Us</a>
+  <a href="about.php">About Us</a>
 
       <hr color="grey" width=70% size=1>
       </center>
@@ -29,7 +29,7 @@
   <center>
   <div class="contentbox">
   
-    <h1> ABOUT US</h1>
+    <h1> CONTACT US</h1>
     <img src="developer.jpeg" alt="Developer Profile" width="20%" height="30%" style="  border-radius: 10px;
       border-style: double; display: block; margin: 5px;">
       <h4> This website is created by</h4>

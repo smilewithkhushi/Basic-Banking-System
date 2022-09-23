@@ -3,12 +3,7 @@
 body{
   background-color: black;
   font:"Gill Sans" ;
-	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	font-family: , "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-	color: white;
-	background-size: 400% 400%;
-	animation: gradient 7s ease infinite;
-	height: 100vh; */
+  color: white;
 }
 
 
@@ -67,12 +62,11 @@ body{
 /* the center container below navbar*/
 .container{
   width: 100%;
-  height: 80%;
+  height: 60%;
   background: linear-gradient(140deg,rgb(71, 70, 59), rgb(185, 185, 185), #b49636 ,rgb(183, 180, 180), #ffc404 );
   margin-bottom: 10px;
   animation: gradient 10s ease infinite; 
   background-size: 400% 400%;
-  padding-bottom: 10%;
 }
 
 
@@ -107,25 +101,9 @@ body{
   background-color: black;
   color: white;
   transition: 0.3s;
-  width: 70%;
+  width: 90%;
   border-radius: 5px;
   display: inline-block;
-}
-
-/* content inside transfer money*/
-.subcontent{
-  padding-left: 5vw;
-  padding-right: 5vw;
-  padding-top: 2vw;
-  background-color: black;
-  color: white;
-  transition: 0.3s;
-  width: 70%;
-  display: inline-block;
-  box-shadow: 2px 2px 2px 2px rgba(255, 217, 0, 0.618);
-  border-radius: 10px;
-  margin: 10px;
-  height: max-content;
 }
 
 /*hovered menu - yellow box*/
@@ -139,41 +117,46 @@ body{
   border: 2px solid white;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 40%;
+  width: 30vw;
   overflow: auto;
 }
 
-/*hovered menu - yellow box*/
-.contentbox h3{
-  font-size: 18px;
-  display: inline-block;
-  padding-right: 5px;
-  margin: 10px;
-  font-family: 'Trebuchet MS';
-  color: white;
-  width: 20vw;
-  overflow: auto;
-}
-
-.input{
-  float: right;
-  padding: 2px;
-  padding-right: 5px;
-  margin: 5px;
-  width: 50%;
-}
 .contentbox:hover{
   transition: 0.3s;
   border: 2px solid grey;
   box-shadow: 8px 8px 15px grey;
   border-radius: 10px;
-}
+} 
 
 .content{
   padding-left: 10vw;
   padding-right: 10vw;
 }
 
+.customer{
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  border: 2px solid white;
+}
+.customer th{
+  box-shadow: 0px 1px  white;
+  font-family: "Trebuchet MS";
+  padding:20px;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.customer td{
+  font-family: Verdana;
+  padding: 10px;
+  margin: 150x;
+  font-size: 12px;
+
+}
 .button{
   align-self: center;
   align-content: center;
@@ -193,7 +176,6 @@ body{
   box-shadow: 2px 2px grey;
   background-color: #ffc404;
 }
-
 /* Bottom of the page*/
 .footer{
   width: 100%;
@@ -213,4 +195,11 @@ body{
   .container{
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+  input,textarea{
+      width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .btn{
+      width: 30%;
+  }
+
 }

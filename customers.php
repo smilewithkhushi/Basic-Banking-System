@@ -41,7 +41,7 @@
 <?php
 $server="localhost";
 $username="root";
-$password="unbroken2003";
+$password="";
 $dbname="bankingsystem";
 
 //create connections
@@ -69,8 +69,8 @@ $con->close();
 <div class="pagebreak">
 </div>
 <div style="width: 80%; color: white; padding: 20px">
-<h4>When a customer deposits money into the bank, this money is on loan to the bank and the bank’s most important obligation is to follow the customer’s instructions in relation to this money. The customer can withdraw money from the account at any point, and they can also stop payment of a cheque by informing the bank. If an overdraft agreement is in place, the bank must also give reasonable written notice of any decision to reduce overdraft credit.
-</h4>
+<h5>When a customer deposits money into the bank, this money is on loan to the bank and the bank’s most important obligation is to follow the customer’s instructions in relation to this money. The customer can withdraw money from the account at any point, and they can also stop payment of a cheque by informing the bank. If an overdraft agreement is in place, the bank must also give reasonable written notice of any decision to reduce overdraft credit.
+</h5>
 </div>
 <div class="pagebreak">
 </div>
