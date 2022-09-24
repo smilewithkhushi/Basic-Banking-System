@@ -35,7 +35,6 @@
 <th> Email </th>
 <th> Account No </th>
 <th> Balance </th>
-<th> Send Money From </th>
 </tr>
 
 <?php
@@ -55,7 +54,7 @@ $sql="Select Name, Email, Account_no, Balance from customers";
 $result= $con-> query($sql);
 if ($result-> num_rows>0){
   while ($row = $result-> fetch_assoc()){
-    echo "<tr><td>".$row["Name"]."</td><td>".$row["Email"]."</td><td>".$row["Account_no"]."</td><td>".$row["Balance"]."</td><td><center><button class='button'>  Send Money  </button></center></td></tr>";
+    echo "<tr><td>".$row["Name"]."</td><td>".$row["Email"]."</td><td>".$row["Account_no"]."</td><td>".$row["Balance"]."</td></tr>";
   }
   echo "</table>";
 }

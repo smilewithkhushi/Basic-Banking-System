@@ -3,12 +3,6 @@
 body{
   background-color: black;
   font:"Gill Sans" ;
-	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	font-family: , "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-	color: white;
-	background-size: 400% 400%;
-	animation: gradient 7s ease infinite;
-	height: 100vh; */
 }
 
 
@@ -153,6 +147,13 @@ body{
   overflow: auto;
 }
 
+.contentbox h5{
+  font-family: monospace;
+  font-size: 15px;
+  padding: 5px;
+  display: inline;
+
+}
 .contentbox:hover{
   transition: 0.3s;
   border: 2px solid grey;

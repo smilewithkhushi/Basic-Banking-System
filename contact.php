@@ -30,12 +30,24 @@
   <div class="contentbox">
   
     <h1> CONTACT US</h1>
-    <img src="developer.jpeg" alt="Developer Profile" width="20%" height="30%" style="  border-radius: 10px;
-      border-style: double; display: block; margin: 5px;">
-      <h4> This website is created by</h4>
-      <h2 style="font-family: Verdana"><u> Khushi Panwar </u></h2>
-      <h4> Intern at Sparks Foundation <br> Shaheed Rajguru College of Applied Sciences for Women, University of Delhi</h4>
-  
+    <img src="phone.jpg" alt="Contact Us" width="50px" height="50px" style="
+  vertical-align: middle; border-radius: 50%;border-style: double; margin:2%;">
+    <h5> +91 9149xxxxxx </h5>
+    <br>
+    
+    <img src="email.jpg" alt="Contact Us" width="50px" height="50px" 
+   style="vertical-align: middle; border-radius: 50%;border-style: double; margin:2%;">
+    <h5>  smilewithkhushiyt@gmail.com </h5>
+    <br>
+    <img src="address.jpg" alt="Contact Us" width="50px" height="50px" style="
+  vertical-align: middle; border-radius: 50%;border-style: double; margin:2%;;"> 
+    <h5> Delhi, India</h5>
+    <br>
+
+      <center>
+      <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=300&amp;height=400&amp;hl=en&amp;q=Shaheed Rajguru College of Applied Sciences for Women (University of Delhi), Vasundhara Enclave,&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div><style>.mapouter{position:relative;text-align:center;width:100%;height:400px;padding-left:10%;}.gmap_canvas {overflow:hidden;background:none!important;width:80%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>       
+      </center>
+        <br> <br>
   </div>
   </center>
 

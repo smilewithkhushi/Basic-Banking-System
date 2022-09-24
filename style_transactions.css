@@ -37,7 +37,7 @@ body{
 .navbar a {
   font-family: sans-serif;
   font-weight: bold;
-  float: center;
+
   color: #f2f2f2;
   text-align: center;
   padding: 12px 14px;
@@ -97,19 +97,21 @@ body{
 }
 
 .contentbox{
-  padding: 20px;
+  padding: 5px;
   background-color: black;
   color: white;
   transition: 0.3s;
-  width: 90%;
+  width: 95%;
   border-radius: 5px;
   display: inline-block;
+  overflow:scroll;
+  position: absolute;
 }
 
 /*hovered menu - yellow box*/
 .contentbox h1{
   font-family: 'Trebuchet MS';
-  font-size: 30px;
+  font-size: 25px;
   color: white;
   background-color: #FF8C00;
   border-radius: 10px;
@@ -134,27 +136,25 @@ body{
 }
 
 .customer{
-  margin: 10px;
-  padding: 10px;
   color: white;
-  font-size: 18px;
+  font-size: 12px;
   border: 2px solid white;
+  position: relative;
 }
 .customer th{
   box-shadow: 0px 1px  white;
   font-family: "Trebuchet MS";
-  padding:20px;
-  margin: 20px;
+  padding:10px;
+  margin: 10px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 10px;
+  overflow: auto;
 }
-
 
 .customer td{
   font-family: Verdana;
-  padding: 10px;
-  margin: 150x;
   font-size: 12px;
+  overflow: auto;
 
 }
 .button{
@@ -167,7 +167,6 @@ body{
   color: white;
   border: 1px solid white;
   padding: 12px;
-  margin: 0px;
   width:fit-content;
 }
 

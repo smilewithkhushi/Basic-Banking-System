@@ -35,10 +35,47 @@
   <div class="subcontent">
    
 <form action="sendmoney.php" method="POST">    
-    <h3> Sender Account </h3><input class='input' type="text" name="sender" id="sender" placeholder="Enter the sender's account number "> <br>
-    <h3> Receiver Account </h3><input class='input' type="text" name="receiver" id="receiver" placeholder="Enter the receiver's account number "><br>
-    <h3> Amount </h3><input class='input' type="text" name="amount" id="amount" placeholder="Enter the amount"><br>
-    <br>
+    <h3> Sender Account </h3>
+    
+<?php
+$server="localhost";
+$username="root";
+$password="";
+$dbname="bankingsystem";
+
+//create connections
+$con=mysqli_connect( $server, $username, $password, $dbname);
+//check for connection success
+if (!$con){
+ die("Connection to this database failed due to ".mysqli_connect_error());
+}
+
+echo "<select id='sender' name='sender'>";
+echo "<option value='' disabled selected hidden>Choose the sender</option>";
+$sql1="Select Name, Account_no from customers";
+$result= $con-> query($sql1);
+if ($result-> num_rows>0){
+  while ($row = $result-> fetch_assoc()){
+    echo "<option value=".$row["Account_no"].">".$row["Name"]."<p> &nbsp; &nbsp;</p>". $row["Account_no"]."</option>";
+  }
+}
+echo "</select>";
+echo "<br> <br> <h3> Receiver Account </h3>";
+
+echo "<select id='receiver' name='receiver'>";
+echo "<option value='' disabled selected hidden>Choose the receiver</option>";
+$result= $con-> query($sql1);
+if ($result-> num_rows>0){
+  while ($row = $result-> fetch_assoc()){
+    echo "<option value=".$row["Account_no"].">".$row["Name"]."<p> &nbsp; &nbsp;</p>". $row["Account_no"]."</option>";
+  }
+}
+echo "</select>";
+$con->close();
+?>
+<br><br>
+<h3> Amount </h3><input class='input' type="text" name="amount" id="amount" placeholder="Enter the amount"><br>
+<br>
     <button class="button" value="submit"> Send Money</button>
 <br> <br>
 </form>
@@ -64,27 +101,30 @@ $sender=$_POST['sender'];
 $receiver=$_POST['receiver'];
 $amount=$_POST['amount'];
 
-$sql1 = "SELECT Balance FROM customers WHERE Account_no=$sender"; 
-$sql2 = "SELECT Balance FROM customers WHERE Account_no=$receiver"; 
+
+$sql1 = "SELECT Name, Balance FROM customers WHERE Account_no=$sender"; 
+$sql2 = "SELECT Name, Balance FROM customers WHERE Account_no=$receiver"; 
 //query to select the amounts from the database for R and S
 $res1= $con-> query($sql1);
 $res2= $con-> query($sql2);
-$sender_bal=$receiver_bal=0;
+$sender_bal=$receiver_bal=$sender_name=$receiver_name=0;
 
 while($row = $res1-> fetch_assoc()){
   $sender_bal=$row['Balance'];
+  $sender_name=$row['Name'];
 }
 
 while($row=$res2-> fetch_assoc()){
   $receiver_bal=$row['Balance'];
+  $receiver_name=$row['Name'];
 }
 
 if($sender_bal>=$amount){
   //calculate final balance
-  $newbal=$receiver_bal+$amount;
+  $receiver_bal=$receiver_bal+$amount;
   $sender_bal=$sender_bal-$amount;
   
-  $update1="UPDATE customers SET Balance=$newbal WHERE Account_no=$receiver";
+  $update1="UPDATE customers SET Balance=$receiver_bal WHERE Account_no=$receiver";
   $update2="UPDATE customers SET Balance=$sender_bal WHERE Account_no=$sender";
   
   $updatebal_rec=$con-> query($update1);
@@ -95,7 +135,7 @@ if($sender_bal>=$amount){
       $status="Transaction Successful";
 
       //add into records when transaction is successful
-      $query_rec="INSERT INTO transactions(Sender_AccountNo, Receiver_AccountNo, Amount_transferred, Sender_Balance, Receiver_Balance, Status) VALUES('$sender', '$receiver', '$amount', '$sender_bal', '$new_bal', '$status')";
+      $query_rec="INSERT INTO transactions(Sender_AccountNo, Sender_Name, Receiver_AccountNo, Receiver_Name, Amount_transferred, Sender_Balance, Receiver_Balance, Status) VALUES('$sender', '$sender_name', '$receiver', '$receiver_name','$amount', '$sender_bal', '$receiver_bal', '$status')";
       if ($con->query($query_rec)==true){
         //echo "Successfully Inserted";
         $insert=true;
@@ -113,7 +153,7 @@ if ($amount>$sender_bal){
   //also add the transaction of failed transactions
   $status="Transaction Failed";
 
-  $query_rec="INSERT INTO transactions(Sender_AccountNo, Receiver_AccountNo, Amount_transferred, Sender_Balance, Receiver_Balance, Status) VALUES('$sender', '$receiver', '$amount', '$sender_bal', '$receiver_bal', '$status')";
+  $query_rec="INSERT INTO transactions(Sender_AccountNo,Sender_Name, Receiver_AccountNo, Receiver_Name, Amount_transferred, Sender_Balance, Receiver_Balance, Status) VALUES('$sender', '$sender_name', '$receiver','$receiver_name', '0', '$sender_bal', '$receiver_bal', '$status')";
   if ($con->query($query_rec)==true){
       $insert=true;
   }
