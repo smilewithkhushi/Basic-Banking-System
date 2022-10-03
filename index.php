@@ -45,10 +45,10 @@
     </div>
 
     <div class="subcontent">
-      <img src="history.jpg" alt="Check Balance" width=50% height="30%" style="  border-radius: 10px;
+      <img src="history.jpg" alt="Check Transactions" width=50% height="30%" style="  border-radius: 10px;
         border-style: double; display: block; margin: 5px;">
-        <h2> <a href="transactions.php"> Check Balance </a></h2>
-        <h4> Here you can check the remaining balance in your account</h4>
+        <h2> <a href="transactions.php"> Transactions </a></h2>
+        <h4> Here you can check the transactions involved</h4>
       </div>
 </div>
 <div class="pagebreak">

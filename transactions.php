@@ -26,14 +26,14 @@
 <div class="header"> Welcome to Sparks Bank! </div>
 <img src="bank.png" height=65% width=30% alt="Welcome to the sparks bank!" style="padding: 5px; margin-right: 8vw; margin-top:8vh; float:right"> 
 </div>
+
 <!--  container closed -->
-<center>
-
-<br> <br>
+<br>
 <div class="contentbox">
-  <h1> TRANSACTION HISTORY </h1>
-
-<table class="customer" style="font-color: white; width=90%">
+  <center>
+<h1> TRANSACTION HISTORY </h1>
+  <center>
+<table class="customer">
 <th> ID </th>
 <th> SENDER'S ACCOUNT NO. </th>
 <th> SENDER'S NAME </th>
@@ -67,18 +67,33 @@ if ($result-> num_rows>0){
   echo "</table>";
 }
 else{
+  echo "</table> <br>";
   echo "0 Result Found!";
 }
 $con->close();
 ?>
+
 </div>
-<br> <br>  
+<br> <br>
+<br> <br>   
+<br> <br> 
+<br> <br> 
+<br> <br> 
+<br> <br>
+<br> <br>
+<br> <br>
+
+
+<center>
 <div class="pagebreak">
 </div>
 <div style="width: 80%; color: white; padding:  20px">
 <h5>When a customer deposits money into the bank, this money is on loan to the bank and the bank’s most important obligation is to follow the customer’s instructions in relation to this money. The customer can withdraw money from the account at any point, and they can also stop payment of a cheque by informing the bank. If an overdraft agreement is in place, the bank must also give reasonable written notice of any decision to reduce overdraft credit.
 </h5>
 </div>
+</center>
+
+
 <div class="pagebreak">
 </div>
 <div class="footer"> <center>

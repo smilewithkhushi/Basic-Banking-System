@@ -97,19 +97,19 @@ body{
 }
 
 .contentbox{
+  position: absolute;
+  margin: 5px;
   padding: 5px;
   background-color: black;
   color: white;
   transition: 0.3s;
-  width: 95%;
-  border-radius: 5px;
-  display: inline-block;
-  overflow:scroll;
-  position: absolute;
+  width: 100%;
+  border-radius: 5px;  
 }
 
 /*hovered menu - yellow box*/
 .contentbox h1{
+  display: block;
   font-family: 'Trebuchet MS';
   font-size: 25px;
   color: white;
@@ -119,43 +119,36 @@ body{
   border: 2px solid white;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 30vw;
-  overflow: auto;
 }
 
-.contentbox:hover{
+/* .contentbox:hover{
   transition: 0.3s;
   border: 2px solid grey;
   box-shadow: 8px 8px 15px grey;
-  border-radius: 10px;
-} 
+  border-radius: 5px;
+}  */
 
 .content{
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .customer{
   color: white;
-  font-size: 12px;
   border: 2px solid white;
-  position: relative;
 }
 .customer th{
   box-shadow: 0px 1px  white;
   font-family: "Trebuchet MS";
-  padding:10px;
-  margin: 10px;
+  padding: 15px;
+  margin: 15px;
   font-weight: bold;
-  font-size: 10px;
-  overflow: auto;
+  font-size: 20px;
 }
 
 .customer td{
   font-family: Verdana;
-  font-size: 12px;
-  overflow: auto;
-
+  font-size: 15px;
 }
 .button{
   align-self: center;
@@ -170,12 +163,14 @@ body{
   width:fit-content;
 }
 
-.button:hover{
+/* .button:hover{
   cursor: pointer;
   box-shadow: 2px 2px grey;
   background-color: #ffc404;
-}
+} */
+
 /* Bottom of the page*/
+
 .footer{
   width: 100%;
   display: block;
