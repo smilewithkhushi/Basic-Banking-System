@@ -1,27 +1,60 @@
 # Basic-Banking-System
-Created a Basic Banking System Website using HTML, CSS, JavaSript and PHP along with mySQL Database. The features of this project : 
--> Facilitate the transfer of money from one user to another in their bank account
--> stores the detials of user in database
--> all the transaction details are recorded and stores in database
--> contains webpages such as home page, contact and about page, tranaaction , customer and sending money page!
+A Basic Banking System Website using HTML, CSS, JavaSript and PHP along with mySQL Database. 
+
+<hr/>
+
+<H2>🗒️ OVERVIEW: 🗒️</H2>
+The features of this project :  <br>
+-> Facilitate the transfer of money from one user to another in their bank account <br>
+-> stores the detials of user in database <br>
+-> all the transaction details are recorded and stores in database <br>
+-> contains webpages such as home page, contact and about page, tranaaction , customer and sending money page! <br>
+
+<hr/>
+
+<h2>✨ PROJECT PREVIEW ✨</H2>
+<div align="center">
+<img src="https://user-images.githubusercontent.com/102166679/193525007-fb253e39-a070-4a7e-a6df-0bec060aa1ee.png" width=400>
+<img src="https://user-images.githubusercontent.com/102166679/193525127-14f1b3c2-1597-4503-8c21-6bc473a98b73.png" width=400>
+<img src="https://user-images.githubusercontent.com/102166679/193525193-523ff63e-f299-4660-9cd2-422da87860c6.png" width=400>
+<img src="https://user-images.githubusercontent.com/102166679/193525322-4e225027-fc8a-4632-9415-6899a1f54591.png" width=400>
+<img src="https://user-images.githubusercontent.com/102166679/193525383-902c7c81-3870-4cf6-8a86-5fd335d4b8de.png" width=400>
+</div>
+
+<hr>
+
+<h2> 🖥️ SET UP THE PROJECT 🖥️</h2>
+
+<h3>To Check if PHP is installed on your Computer</h3>
+<ol>
+  <li>Search for the command prompt in Windows by using the search keyword  cmd.</li>
+  <li>Open it then type php --version and click enter. </li>
+</ol> 
+
+<h3> Installation </h3>
+<ol>
+<li>Install XAMPP or WAMPP.</li>
+<li>Open XAMPP Control panal and start [apache] and [mysql] .</li>
+<li>Download this project from github OR follow gitbash commands : </li>
+
+i> cd C:\xampp\htdocs\
+
+ii> git clone https://github.com/SmileWithKhushi/Basic-Banking-System.git
+
+<li> Extract the files in C:\xampp\htdocs. </li>
+
+<li> Open link localhost/phpmyadmin </li>
+
+<li> Click on new at side navbar. </li>
+<li> Give a database name as (bankingsystem) hit on create button. </li>
 
 
-<H2> OVERVIEW: <H2>
-<h3> INDEX PAGE </H3>
-<img src="https://user-images.githubusercontent.com/102166679/193525007-fb253e39-a070-4a7e-a6df-0bec060aa1ee.png">
-<img src="https://user-images.githubusercontent.com/102166679/193525127-14f1b3c2-1597-4503-8c21-6bc473a98b73.png">
+</ol>
+<hr>
 
-<h3> CUSTOMER PAGE </H3>
-<img src="https://user-images.githubusercontent.com/102166679/193525193-523ff63e-f299-4660-9cd2-422da87860c6.png">
+<h2>🛠️ HOW TO CONTRIBUTE 🛠️</h2>
 
-<h3> TRANSACTION PAGE </H3>
-<img src="https://user-images.githubusercontent.com/102166679/193525322-4e225027-fc8a-4632-9415-6899a1f54591.png">
-
-<h3> SEND MONEY </H3>
-<img src="https://user-images.githubusercontent.com/102166679/193525383-902c7c81-3870-4cf6-8a86-5fd335d4b8de.png">
-
-<h3> CONTACT US PAGE </H3>
-<img src="https://user-images.githubusercontent.com/102166679/193525486-8e7d0999-06d7-4648-8e7f-253935dc7815.png">
-
-<h3> ABOUT US PAGE </H3>
-<img src="https://user-images.githubusercontent.com/102166679/193525552-6bada259-ec41-47f3-9903-ad7367d84fae.png">
+<ol>
+  <li>Refer to CONTRIBUTING.md for details</li>
+</ol>
+<HR/>
